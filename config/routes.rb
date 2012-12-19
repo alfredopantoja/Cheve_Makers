@@ -1,7 +1,7 @@
 CheveMakers::Application.routes.draw do
   get "users/new"
 
-  root to: 'static_pages#home'
+  root to: 'breweries#index'
 
   match '/signup',  to: 'users#new'
 

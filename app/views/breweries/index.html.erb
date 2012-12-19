@@ -1,6 +1,20 @@
-<% provide(:title, 'All breweries') %>
-<h1>All breweries</h1>
+<div class="row">
+	<div class="span8">	
+		<h1>Breweries</h1>
 
-<ul class="breweries">
-  <%= render @breweries %>
-</ul>
+		<ul class="breweries">
+		  <%= render @breweries %>
+		</ul>
+	</div>
+	<aside class="span4">
+		<section>
+			<h1>Welcome to Cheve Makers</h1>
+
+		    <h2>
+		    	Are you a home brewer?    
+		    </h2>
+
+		    <%= link_to "Create your profile now!", new_brewery_path, class: "btn btn-large btn-primary" %>
+		</section>
+	</aside>
+</div>

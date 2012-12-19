@@ -1,6 +1,12 @@
 <li>
-	<%= link_to brewery.name, brewery %> | <%= link_to "delete", brewery, 
+	<h2><%= link_to brewery.name, brewery %></h2> 
+	
+	<p><%= brewery.description %></p>
+	<p>
+		<small>
+			<%= link_to "delete", brewery, 
 												method: :delete,
 												data: { confirm: "You sure?" } %>
-
+		</small>
+	</p>
 </li>

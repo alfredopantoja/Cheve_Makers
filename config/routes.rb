@@ -1,5 +1,6 @@
 CheveMakers::Application.routes.draw do
-  get "users/new"
+  resources :users
+  resources :breweries
 
   root to: 'breweries#index'
 
@@ -9,7 +10,7 @@ CheveMakers::Application.routes.draw do
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 
-  resources :breweries
+  
 
 
 
